@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Segitiga</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <!-- Bagian Luas Segitiga -->
+    <div class="calculator">
+        <h2>Luas Segitiga</h2>
+        <input type="number" id="base" placeholder="Masukkan alas (a)">
+        <input type="number" id="height" placeholder="Masukkan tinggi (t)">
+        <button onclick="calculateArea()">Hitung Luas</button>
+        <p id="area-result"></p>
+        <button onclick="resetArea()">Reset</button>
+    </div>
+
+    <!-- Bagian Keliling Segitiga -->
+    <div class="calculator">
+        <h2>Keliling Segitiga</h2>
+        <input type="number" id="sideA" placeholder="Masukkan sisi A (s1)">
+        <input type="number" id="sideB" placeholder="Masukkan sisi B (s2)">
+        <input type="number" id="sideC" placeholder="Masukkan sisi C (s3)">
+        <button onclick="calculatePerimeter()">Hitung Keliling</button>
+        <p id="perimeter-result"></p>
+        <button onclick="resetPerimeter()">Reset</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
